@@ -17,7 +17,7 @@ def create_g(images, beta, N, H, W):
 def create_f(q, g, images, N, H, W):
     f = np.zeros((N, H, W))
     
-    for i in range(H - 1, 0, -1):
+    for i in range(H - 1, -1, -1):
         q_i = q[:, :, i]
         g_i = g[:, :, :, i]
 
